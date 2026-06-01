@@ -1,0 +1,113 @@
+{
+  "gate_input": "/Users/chen/Documents/gate10_Ac225_Compton_PET/gate10-geoonly/gate10_output/run_trackaware_8threads_40min_ac225_fixed_detector_response_gamma/compton_events.csv",
+  "input_rows": 583,
+  "only_gate_valid_angle": true,
+  "energy_window_frac_for_lines": 0.15,
+  "scatter_energy_window_keV": [
+    1.0,
+    null
+  ],
+  "source_xyz_mm_for_qa_only": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "geometry_mm": {
+    "sectors": 8,
+    "sector_angle_deg": 45.0,
+    "scatter_center_radius_mm": 39.5,
+    "scatter_inner_radius_thin_mm": 38.75,
+    "scatter_inner_radius_thick_mm": 37.5,
+    "scatter_thin_thickness_mm": 1.5,
+    "scatter_thick_thickness_mm": 4.0,
+    "absorber_inner_radius_mm": 62.5,
+    "absorber_center_radius_mm": 67.0,
+    "absorber_thickness_mm": 9.0,
+    "pixel_pitch_mm": 3.2,
+    "pixel_size_mm": 2.5,
+    "pixel_grid": "8x8",
+    "gap_material": "BaSO4"
+  },
+  "outputs": {
+    "all": "data/ac225_osem_events_all.csv",
+    "legacy_reference": "data/ac225_coin_legacy_reference.txt",
+    "source_qa": "data/ac225_osem_events_sourceqa20.csv",
+    "line218": "data/ac225_osem_events_line218.csv",
+    "line218_source_qa": "data/ac225_osem_events_line218_sourceqa20.csv",
+    "line440": "data/ac225_osem_events_line440.csv",
+    "line440_source_qa": "data/ac225_osem_events_line440_sourceqa20.csv"
+  },
+  "event_sets": [
+    {
+      "name": "all_variable_energy",
+      "events": 472,
+      "total_energy_mean_keV": 289.4826686318212,
+      "scatter_energy_mean_keV": 75.89163337428762,
+      "total_energy_min_keV": 46.88436257632766,
+      "total_energy_max_keV": 1167.5554171557515,
+      "arm_source_mean_deg": 20.195651068382578,
+      "arm_source_abs_median_deg": 16.106365864083827,
+      "events_inside_abs_arm_20deg": 253
+    },
+    {
+      "name": "source_qa_abs_arm_le_20deg",
+      "events": 253,
+      "total_energy_mean_keV": 298.9908940777252,
+      "scatter_energy_mean_keV": 64.83573778284378,
+      "total_energy_min_keV": 82.89971500902575,
+      "total_energy_max_keV": 1167.5554171557515,
+      "arm_source_mean_deg": 3.7458200411947367,
+      "arm_source_abs_median_deg": 4.025995187797186,
+      "events_inside_abs_arm_20deg": 253
+    },
+    {
+      "name": "218keV_window",
+      "events": 157,
+      "total_energy_mean_keV": 209.54337421619576,
+      "scatter_energy_mean_keV": 32.39272787942341,
+      "total_energy_min_keV": 186.40285330506987,
+      "total_energy_max_keV": 249.7272382704782,
+      "arm_source_mean_deg": 11.872703153703371,
+      "arm_source_abs_median_deg": 5.737931002443688,
+      "events_inside_abs_arm_20deg": 109
+    },
+    {
+      "name": "218keV_window_source_qa_abs_arm_le_20deg",
+      "events": 109,
+      "total_energy_mean_keV": 207.0663165387463,
+      "scatter_energy_mean_keV": 23.965746926658234,
+      "total_energy_min_keV": 186.40285330506987,
+      "total_energy_max_keV": 249.7272382704782,
+      "arm_source_mean_deg": 1.543598854264476,
+      "arm_source_abs_median_deg": 3.060258621116496,
+      "events_inside_abs_arm_20deg": 109
+    },
+    {
+      "name": "440.446keV_window",
+      "events": 156,
+      "total_energy_mean_keV": 408.46716873500674,
+      "scatter_energy_mean_keV": 126.60642999930883,
+      "total_energy_min_keV": 375.7075858195834,
+      "total_energy_max_keV": 480.5303503901457,
+      "arm_source_mean_deg": 3.9706912144250204,
+      "arm_source_abs_median_deg": 7.251791866535882,
+      "events_inside_abs_arm_20deg": 110
+    },
+    {
+      "name": "440.446keV_window_source_qa_abs_arm_le_20deg",
+      "events": 110,
+      "total_energy_mean_keV": 405.22159435064,
+      "scatter_energy_mean_keV": 108.03865843108716,
+      "total_energy_min_keV": 377.87856245895875,
+      "total_energy_max_keV": 480.5303503901457,
+      "arm_source_mean_deg": 0.6025657896018518,
+      "arm_source_abs_median_deg": 2.2994882288041794,
+      "events_inside_abs_arm_20deg": 110
+    }
+  ],
+  "notes": [
+    "The all file uses measured scatter+absorber energy as per-event incident energy.",
+    "Line files use fixed incident energies and require total reconstructed energy inside the configured window.",
+    "source_qa output uses the known simulated source at the origin and is for validation, not blind reconstruction."
+  ]
+}
