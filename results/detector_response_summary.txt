@@ -1,0 +1,32 @@
+Detector-response model: simplified post-processing, not full optical photon tracking.
+Configuration:
+  light_yield_per_mev: 56000.0
+  collection_efficiency: 0.4
+  pde: 0.35
+  microcell_count: 14400
+  gain: 1.0
+  electronics_noise_pe: 10.0
+  energy_threshold_mev: 0.005
+  random_seed: 2400703
+
+Crystal singles:
+  total_singles: 151101
+  thresholded_singles: 135412
+  scatter_singles: 123350
+  absorber_singles: 27751
+  edep_sum_mev: 10629.853
+  ereco_sum_mev: 10025.741
+  max_ereco_mev: 1.1381658
+  max_photoelectrons: 8923.2197
+
+Compton candidates:
+  pairs: 583
+  valid_angle_pairs: 472
+  mean_total_energy_mev: 0.27543049
+  mean_compton_angle_deg: 67.088667
+
+Event building:
+  energy_mode: ideal-gamma
+  grouping_mode: gamma-track
+  pairing_mode: gamma-track
+  coincidence_window: inf
