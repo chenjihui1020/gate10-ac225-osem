@@ -1,0 +1,3 @@
+energy_keV,dataset,valid_events_used,fwhm_x_mm,fwhm_y_mm,fwhm_mean_mm,profile_x,profile_y,calculated_fwhm_mm
+218.0,Ac225 line218 source-QA ARM<=20 deg,109.0,4.438003322,3.291990298,3.86499681,source_center,source_center,24.207088494922672
+440.446,Ac225 line440 source-QA ARM<=20 deg,110.0,2.774897369,3.089193147,2.932045258,source_center,source_center,9.819412551547481
