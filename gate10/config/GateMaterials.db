@@ -1,0 +1,41 @@
+[Elements]
+Hydrogen:    S= H  ; Z=  1. ; A=   1.008 g/mole
+Carbon:      S= C  ; Z=  6. ; A=  12.011 g/mole
+Nitrogen:    S= N  ; Z=  7. ; A=  14.007 g/mole
+Oxygen:      S= O  ; Z=  8. ; A=  15.999 g/mole
+Sulfur:      S= S  ; Z= 16. ; A=  32.060 g/mole
+Aluminium:   S= Al ; Z= 13. ; A=  26.982 g/mole
+Silicon:     S= Si ; Z= 14. ; A=  28.085 g/mole
+Gallium:     S= Ga ; Z= 31. ; A=  69.723 g/mole
+Barium:      S= Ba ; Z= 56. ; A= 137.327 g/mole
+Gadolinium:  S= Gd ; Z= 64. ; A= 157.250 g/mole
+Cerium:      S= Ce ; Z= 58. ; A= 140.116 g/mole
+
+[Materials]
+Air: d=0.00120479 g/cm3 ; n=2 ; state=gas
+     +el: name=Oxygen ; f=0.232
+     +el: name=Nitrogen ; f=0.768
+
+Water: d=1.0 g/cm3 ; n=2 ; state=liquid
+       +el: name=Hydrogen ; n=2
+       +el: name=Oxygen ; n=1
+
+Silicon: d=2.329 g/cm3 ; n=1 ; state=solid
+         +el: name=auto ; n=1
+
+CeGAGG: d=6.63 g/cm3 ; n=5 ; state=solid
+        +el: name=Gadolinium ; f=0.500
+        +el: name=Aluminium  ; f=0.055
+        +el: name=Gallium    ; f=0.220
+        +el: name=Oxygen     ; f=0.205
+        +el: name=Cerium     ; f=0.020
+
+PLA_3DPrintedFrame: d=1.24 g/cm3 ; n=3 ; state=solid
+                    +el: name=Carbon   ; n=3
+                    +el: name=Hydrogen ; n=4
+                    +el: name=Oxygen   ; n=2
+
+BaSO4: d=4.5 g/cm3 ; n=3 ; state=solid
+       +el: name=Barium ; n=1
+       +el: name=Sulfur ; n=1
+       +el: name=Oxygen ; n=4
