@@ -1,0 +1,19 @@
+root_file: gate10_output/run_trackaware_8threads_40min_ac225_fixed/gate10_output/run_trackaware_8threads_40min_ac225_fixed/ac225_hits.root
+tree: Hits
+entries: 13988317.0
+positive_edep_entries: 13988317
+events_with_hits: 104285
+total_energy_deposit_mev: 18536.058
+hit_edep_mean_mev: 0.0013251099
+hit_edep_max_mev: 0.15663675
+event_edep_mean_mev: 0.17774424
+event_edep_max_mev: 2.5386854
+particle_hit_counts:
+  e-: 13831022
+  gamma: 157172
+  e+: 109
+  Gd158: 5
+  Gd160: 3
+  Ga71: 3
+  Gd157: 2
+  Gd156: 1
