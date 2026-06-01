@@ -1,0 +1,29 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Large Gate/OpenGATE simulation outputs
+*.root
+gate10_output/
+*_output/
+*.npy
+*.npz
+
+# Local environments and temporary packages
+.venv/
+venv/
+opengate_env/
+*.zip
+*.tar
+*.tar.gz
+
+# Build products
+*.o
+*.out
+*.so
+ac225_osem_cuda
+
+# IDE files
+.idea/
+.vscode/
