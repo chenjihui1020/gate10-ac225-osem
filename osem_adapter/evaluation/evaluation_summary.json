@@ -1,0 +1,66 @@
+{
+  "converted_dir": "data",
+  "cuda_output_root": "cuda_outputs",
+  "fig10": {
+    "input_events": 472,
+    "energy_window_counts": [
+      {
+        "line_keV": 218.0,
+        "window_low_keV": 185.29999999999998,
+        "window_high_keV": 250.7,
+        "events_in_window": 158,
+        "fraction_of_all": 0.3347457627118644
+      },
+      {
+        "line_keV": 440.446,
+        "window_low_keV": 374.3791,
+        "window_high_keV": 506.5129,
+        "events_in_window": 156,
+        "fraction_of_all": 0.3305084745762712
+      }
+    ],
+    "output": "evaluation/fig10_scatter_absorber_energy.png"
+  },
+  "fig7": {
+    "rows": [
+      {
+        "energy_keV": 218.0,
+        "dataset": "Ac225 line218 source-QA ARM<=20 deg",
+        "valid_events_used": 109.0,
+        "fwhm_x_mm": 4.438003322,
+        "fwhm_y_mm": 3.291990298,
+        "fwhm_mean_mm": 3.86499681,
+        "profile_x": "source_center",
+        "profile_y": "source_center",
+        "calculated_fwhm_mm": 24.207088494922672
+      },
+      {
+        "energy_keV": 440.446,
+        "dataset": "Ac225 line440 source-QA ARM<=20 deg",
+        "valid_events_used": 110.0,
+        "fwhm_x_mm": 2.774897369,
+        "fwhm_y_mm": 3.089193147,
+        "fwhm_mean_mm": 2.932045258,
+        "profile_x": "source_center",
+        "profile_y": "source_center",
+        "calculated_fwhm_mm": 9.819412551547481
+      }
+    ],
+    "output": "evaluation/fig7_spatial_resolution_vs_energy.png",
+    "paper_reference": [
+      {
+        "energy_keV": 356.0,
+        "label": "paper 133Ba",
+        "fwhm_x_mm": 14.7,
+        "fwhm_y_mm": 15.3
+      },
+      {
+        "energy_keV": 511.0,
+        "label": "paper 22Na",
+        "fwhm_x_mm": 12.0,
+        "fwhm_y_mm": 13.5
+      }
+    ]
+  },
+  "calculated_resolution_note": "Calculated estimate uses the event energy distribution and an empirical GAGG-SiPM energy resolution model fitted to 15.1% FWHM at 122 keV and 10.8% FWHM at 245 keV from the paper. It is a current-model diagnostic, not the paper's exact calculation."
+}
